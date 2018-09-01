@@ -1,0 +1,88 @@
+<!DOCUtype>
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" type="text/css" href="demo.css">
+<style>
+a{
+text-decoration:none;
+color: blue;
+height:auto;
+width:10%;
+padding:10px 0px 10px 10px;
+background:transparent;
+border:1px solid blue;
+margin-left:40px;
+margin-top:20px;
+display:inline-block;
+
+}
+</style>
+
+<script type="text/javascript">
+function login()
+{
+var uname=document.getElementById('uname').value;
+var pass=document.getElementById('pass').value;
+var error=document.getElementById('error');
+var uid="mani";
+var pid="admin";
+if(uname=="")
+{
+alert("Enter Username")
+document.getElementById('error').innerHTML="Enter Username";
+document.getElementById('uname').focus();
+return false;
+}
+if(pass=="")
+{
+alert("Enter Password")
+document.getElementById('error').innerHTML="Enter password";
+document.getElementById('pass').focus();
+}
+
+
+
+if(uid==uname)
+{
+if(pid==pass)
+{
+window.location="home.html";
+}
+else{
+document.getElementById('error').innerHTML="userid or password is incorrect";
+}
+}
+}
+</script>
+
+
+</head>
+<body>
+<header>
+	<h1><strong style="color: orange";>POSTTELL</strong> <span style="color:grey";>FIX.COM</span></h1></header>
+	<div id="error"></div>
+	<div id="loga">
+	<h1>Login Form</h1>
+	
+	<div class="regi">
+	<label>
+	Username:
+	</label>
+	<input type="text" name="uname" id="uname" placeholder="Enter the username"/>
+	<label>
+	Password:
+	</label>
+	<input type="password" name="pass" id="pass" placeholder="Enter the password"/>
+	
+	<button onclick="login()" value="login">Login</button>
+	
+	<button type="reset" value="reset">Reset</button><br>
+	<a href="regi.html">JoinHere</a>
+	</div>
+	
+	</div>
+	
+
+</body>
+</html>

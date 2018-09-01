@@ -1,0 +1,119 @@
+<!DOCUtype>
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" type="text/css" href="demo.css">
+<style>
+a{
+text-decoration:none;
+color: blue;
+height:auto;
+width:10%;
+padding:10px 0px 10px 10px;
+background:transparent;
+border:1px solid blue;
+margin-left:40px;
+margin-top:20px;
+display:inline-block;
+
+}
+</style>
+
+<script type="text/javascript">
+
+function check()
+{
+var uname=document.getElementById('uname').value;
+var dob=document.getElementById('dob').value;
+var email=document.getElementById('email').value;
+var mob=document.getElementById('mob').value;
+var pass=document.getElementById('pass').value;
+var pass=document.getElementById('pass').value;
+var cpass=document.getElementById('cpass').value;
+
+
+
+if(uname=="")
+{
+alert("Enter Username")
+document.getElementById('uname').focus();
+return false;
+}
+
+
+if(dob=="")
+{
+alert("Enter dob")
+document.getElementById('error').innerHTML= "Enter dob";
+document.getElementById('dob').focus();
+return false;
+}
+
+if(email=="")
+{
+alert("Enter email")
+document.getElementById('error').innerHTML="Enter Email";
+document.getElementById('email').focus();
+return false;
+}
+
+
+
+if(mob=="")
+{
+alert("Enter mobileno")
+document.getElementById('error').innerHTML="EnterMobile";
+document.getElementById('mob').focus();
+return false;
+}
+
+
+
+if(pass=="")
+{
+alert("Enter pass")
+document.getElementById('error').innerHTML="Enter password";
+document.getElementById('pass').focus();
+return false;
+}
+
+
+
+}
+
+</script>
+
+
+</head>
+<body>
+<h1><strong style="color: orange";>POSTTELL<strong> <span style="color:grey";>FIX<span>.COM</h1></header>
+	
+	<div id="loga">
+	<h1>Login Form</h1>
+	<form>
+	<div class="regi">
+	<label>
+	Username:
+	</label>
+	<input type="text" name="uname" id="uname" placeholder="Enter the username"/>
+	<label>
+	 Dob:s
+	</label>
+	<input type="date" name="dob" id="dob" title="choose your Date of birth"/>
+	<label>Email</label>
+	<input type="email" name="email" id="email" placeholder="Enter emailId"/>	
+	<label>Mobile no</label>	
+	<input type="number" name="mob" id="mob"  placeholder="Enter Mobileno"/>
+	<label>
+	Password:
+	</label>
+	<input type="password" name="pass" id="pass" placeholder="Enter the password"/>
+	<button onclick="check()" value="login">submit</button>
+	<button type="reset" value="reset">Reset</button>
+	
+	</div>
+	</form>
+	</div>
+
+</body>
+</html>

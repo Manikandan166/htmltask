@@ -1,0 +1,140 @@
+html,body{
+margin:0;
+padding:0;
+}
+h1{
+	width:100%;
+	color:red;
+ 	text-align:center;
+	background:black;
+}
+nav{
+height:50px;
+width:100%;
+background:black;
+    position: absolute;
+    top: 45;
+   
+}
+li{
+margin-left:30px;
+display:inline-block;
+}
+a{
+text-decoration:none;
+color:white;
+padding:5px 5px 5px 5px;
+}
+a:hover{
+color:white;
+background:orange;
+border-top:3px solid white;
+padding:5px 5px 5px 5px;
+}
+#content{
+height:100%;
+width:70%;
+margin-left:15%;
+margin-right:15%;
+background:url('blue.png');
+ background-attachment: fixed;
+background-size:70% 100%px;
+background-repeat:no-repeat;
+}
+
+#navright{
+    float: right;
+    margin-top: -20px;
+    margin-right: 20px;
+    background: transparent;
+    color: white;
+    font-size: 12px;
+    display: block;
+    position: relative;
+}
+.regi{
+height:50%;
+width:50%;
+color:black;
+font-family:arial;
+    margin-right: 500px;
+    margin-left: 600px;
+}
+input[type],select{
+	width:70%;
+    color: blue;
+    padding: 10px 10px 15px 10px;
+    line-height: 3px;
+    margin-top: 10px;
+    margin-left: 50px;
+	outline:none;
+	border:1px solid black;
+	border-radius:8px;
+}
+
+label{
+	width:50%;
+	color:red;
+	display:inline-block;
+    padding: 10px 0px 15px 10px;
+    line-height: 2px;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+button{
+	 width:30%;
+	padding:10px 5px 10px 5px;
+	outline:none;
+	margin-right:40px;
+	margin-left:40px;
+	margin-top:20px;
+	
+}
+button[value="login"]:hover{
+	color:green;
+	background:transparent;
+	border:1px solid green;
+}
+button:active,button:focus{
+	color:white;
+	background:green;
+	
+}
+button[value="login"]{
+	color:white;
+	background:#8BC34A;
+	border:1px solid white;
+}
+button[value="reset"]{
+	color:white;
+	background:red;
+	border:1px solid white;
+}
+button[value="reset"]:hover{
+	color:red;
+	background:transparent;
+	border:1px solid red;
+}
+input[placeholder=""]{
+	color:#b6b6ca;
+}
+textarea{
+height:200px;
+width:70%;
+resize: none;
+    color: blue;
+    padding: 10px 10px 15px 10px;
+    line-height: 3px;
+    margin-top: 10px;
+    margin-left: 50px;
+	outline:none;
+	border:1px solid black;
+	border-radius:8px;}
+#contact p{
+margin-left:200px;
+font-size:20px;
+}
+#contact h1{
+text-align:center;
+}

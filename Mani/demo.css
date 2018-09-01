@@ -1,0 +1,108 @@
+html,body{
+margin:0;
+padding:0;}
+.container{
+height:1000px;
+width:100%;
+background:lightblue;
+}
+
+header{
+	height:50px;
+	width:100%;
+	text-align:center;
+	background:black;
+margin-top:100px;
+}
+.regi{
+height:50%;
+width:50%;
+color:black;
+font-family:arial;
+    margin-right: 500px;
+    margin-left: 600px;
+}
+input[type],select{
+	width:70%;
+    color: blue;
+    padding: 10px 10px 15px 10px;
+    line-height: 3px;
+    margin-top: 10px;
+    margin-left: 50px;
+	outline:none;
+	border:1px solid black;
+	border-radius:8px;
+}
+
+label{
+	width:50%;
+	color:red;
+	display:inline-block;
+    padding: 10px 0px 15px 10px;
+    line-height: 2px;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+button{
+	 width:30%;
+	padding:10px 5px 10px 5px;
+	outline:none;
+	margin-right:40px;
+	margin-left:40px;
+	margin-top:20px;
+	
+}
+button[value="login"]:hover{
+	color:green;
+	background:transparent;
+	border:1px solid green;
+}
+button:active,button:focus{
+	color:white;
+	background:green;
+	
+}
+button[value="login"]{
+	color:white;
+	background:#8BC34A;
+	border:1px solid white;
+}
+button[value="reset"]{
+	color:white;
+	background:red;
+	border:1px solid white;
+}
+button[value="reset"]:hover{
+	color:red;
+	background:transparent;
+	border:1px solid red;
+}
+input[placeholder=""]{
+	color:#b6b6ca;
+}
+#loga{
+	margin-top:100px;
+	}
+h1{
+	color:red;
+ 	text-align:center;
+}
+
+#error{
+ color:red;
+text-align:center;
+margin-left:600px;
+font-size:30px;
+margin-top:60px;
+}
+textarea{
+width:70%;
+    color: blue;
+    padding: 10px 10px 15px 10px;
+    line-height: 3px;
+    margin-top: 10px;
+    margin-left: 50px;
+	outline:none;
+	border:1px solid black;
+	border-radius:8px;}
